@@ -1,0 +1,119 @@
+<div class="section" id="experience">
+        <div class="container cc-education"><br>
+            <div class="h4 text-center mb-4 title">My Timeline</div>
+            <!-- <ngx-htl-horizontal-timeline [(items)]="items" (click)="description($event)"></ngx-htl-horizontal-timeline> -->
+            <br>
+            <div style="margin: auto; width: 60%;">
+            <a class="btn btn-default btn-round btn-lg btn-icon"  style="background-color:#00334D; color:white; margin: 20px;" 
+            (click)="description('tenth')" rel="tooltip" title="10th">
+            <i class="fa fa-building"></i>
+          </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="btn btn-default btn-round btn-lg btn-icon"  style="background-color:#00334D; color:white; margin: 20px;" 
+            (click)="description('twelth')" rel="tooltip" title="12th">
+            <i class="fa fa-building"></i>
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="btn btn-default btn-round btn-lg btn-icon"  style="background-color:#00334D; color:white;margin: 20px; " 
+            (click)="description('college')" rel="tooltip" title="College">
+            <i class="fa fa-graduation-cap"></i>
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="btn btn-default btn-round btn-lg btn-icon"  style="background-color:#00334D; color:white;margin: 20px; " 
+            (click)="description('intern')" rel="tooltip" title="Intern">
+            <i class="fa fa-briefcase"></i>
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="btn btn-default btn-round btn-lg btn-icon"  style="background-color:#00334D; color:white;margin: 20px; " 
+            (click)="description('job')" rel="tooltip" title="Job">
+            <i class="fa fa-briefcase"></i>
+          </a>
+         </div>
+<br>
+           <div *ngIf="tenth">
+              <div data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body" style="font-family: cursive;">
+                  <div class="h5">Secondary Education (10<sup>th</sup> Std) - 2013</div>
+                   <h4 class="category">AV Meiyappan Matriculation Higher Secondary School
+                   </h4>
+                   <ul >
+                    <li style="font-size: large;">Scored <b>98.6%</b> in my Secondary School Board Exams.</li>
+                    <li style="font-size: large;">Ranked School <b>3<sup>rd</sup></b> in the Board Exams.</li>
+                 </ul>
+                </div>
+              </div>
+            </div>
+            
+         <div *ngIf="twelth">
+           <div data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+             <div class="card-body" style="font-family: cursive;">
+               <div class="h5">Higher Secondary (12<sup>th</sup> Std) - 2015</div>
+                <h4 class="category">AV Meiyappan Matriculation Higher Secondary School
+                </h4>
+                <ul>
+                 <li style="font-size: large;">Chose Computer Science, Mathematics, Physics and Chemistry as my primary subjects.</li>
+                 <li style="font-size: large;">Scored <b>94%</b> in the Board Exams.</li>
+                 <li style="font-size: large;">Was elected as the <b>Captain</b> of my school house and won the <b>Overall Championship</b>.</li>
+              </ul>
+             </div>
+           </div>
+         </div>
+
+         <div *ngIf="college">
+            <div data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+               <div class="card-body" style="font-family: cursive;">
+                 <div class="h5">BE Computer Science and Engineering - 2015 to 2019</div>
+                  <h4 class="category">Rajalakshmi Institute Of Technology
+                  </h4>
+                  <ul>
+                   <li style="font-size: large;"> Rajalakshmi Institute of Technology is Affiliated to Anna University and located in Chennai, Tamil Nadu </li>
+                   <li style="font-size: large;">Completed my Bachelor's in Computer Science Engineering with <b>8.92 CGPA</b>.</li>
+                    <li style="font-size: large;"><b>Gold Medalist</b> and secured <b>19<sup>th</sup> Rank</b> in Anna University overall state ranking.</li>
+                    <li style="font-size: large;">Won various awards for my Academic performance. (Check out My Possessions <i class="fa fa-smile-o"></i>)</li>
+                </ul>
+               </div>
+             </div>
+         </div>
+
+         <div *ngIf="intern">
+            <div data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+               <div class="card-body" style="font-family: cursive;">
+                 <div class="h5">Intern - 5 Months</div>
+                  <h4 class="category"> NEC (Nippon Electric Corporation) 
+                  </h4>
+                  <p style="font-size: large;">Completed a 5 months Internship at NEC located in Chennai, during the time learned about end-to-end application development and developed an Assert Management System for the 
+                     company. The Tech stack used for the developing the application are as follows,
+                  </p><ul>
+                     <li style="font-size: large;">HTML,CSS</li>
+                     <li style="font-size: large;">JavaScript</li>
+                     <li style="font-size: large;">php</li>
+                     <li style="font-size: large;">MySql</li>
+                     
+                 </ul>
+               </div>
+             </div>
+         </div>
+
+         <div *ngIf="job">
+            <div data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+               <div class="card-body" style="font-family: cursive;">
+                 <div class="h5">Virtusa Consulting Services Private Limited - 2019 to Till Date</div>
+                  <h4 class="category">Associate Engineer - Technology
+                  </h4>
+                  <p style="font-size: large;">As an Associate Enginner I was trained in Big Data Techologies and got to work in a wide range of projects of different 
+                     domains as follows,</p>
+                        <ul>
+                            <li style="font-size: large;">Web based Application development</li>
+                            <li style="font-size: large;">Exploratory Data Analysis</li>
+                            <li style="font-size: large;">Data Quality Check</li>
+                            <li style="font-size: large;">Data Analytics</li>
+                        </ul>
+               </div>
+             </div>
+         </div>
+<br><br>
+         </div>
+        </div>
+
+   
+                       
+               
