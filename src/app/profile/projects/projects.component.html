@@ -1,8 +1,7 @@
- <div class="section" id="projects">
+ <div class="section" id="projects" >
     <div class="container cc-education">
         <div class="h4 text-center mb-4 title">My Projects</div><br><br>
 
-        <!-- <div class="card" data-aos="zoom-in"> -->
           <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
             
             <ol class="carousel-indicators">
@@ -15,7 +14,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="row">
-                  <!-- class="col-lg-2 col-md-3 cc-reference-header" -->
+                 
                   <div class="col-lg-2 col-md-3" style="vertical-align: middle;">
                     <br>
                     <img src="assets/images/project_1.PNG" alt="Image" style="width:170px;height:200px;margin-left: 15px; margin-right:5px; float: left;"/>
@@ -27,7 +26,7 @@
                     <br>
                     <p><b>Tech Stack : </b>Python, Reinforcement algorithm</p>
                     <br>
-                    <button>Source Code</button>
+                    <button (click)="project1()">Source Code</button>
                     <br><br>              
                   </div>
                 </div>
@@ -43,10 +42,10 @@
                     <h2 title>Marine Oil Spill Prediction</h2>
                     <p>A method incorporated using both vector model and lagrangian approach to predict the trajectory of oil spill in marine environment using live data from NOAA.
                        It is a web application where the user can provide the co-ordinate of the spill to predict the oil spill trajectory.     </p>
-                       <!-- <br> -->
+                       
                        <p><b>Tech Stack : </b>Python, OpenDrift Framework, HTML, CSS</p>
                        <br>
-                       <button (click)="displayGif()">View Sample</button> &nbsp;&nbsp;&nbsp;<button>Source Code</button>
+                       <button (click)="displayGif()">View Sample</button> &nbsp;&nbsp;&nbsp;<button (click)="project2()">Source Code</button>
                        <br><br>
                   </div>
                 </div>
@@ -87,7 +86,8 @@
                       and contents about myself. </p>
                     <p><b>Tech Stack : </b>Angular Framework and Bootstrap</p>
                     <br>
-                    <button>Source Code</button>
+                    <button (click)="project4()">Source Code</button>  &nbsp;&nbsp;&nbsp;
+                    <button (click)="project4_site()">View Site</button>
                     <br><br>
 
                   </div>
@@ -98,7 +98,7 @@
              
             </div>
           </div>
-        <!-- </div> -->
+       
         <br><br>
     </div>
  </div>

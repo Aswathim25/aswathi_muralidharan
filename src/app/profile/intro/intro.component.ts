@@ -13,6 +13,6 @@ export class IntroComponent implements OnInit {
   }
 
   downloadResume() {
-    window.open('/assets/resume/Aswathi Muralidharan - Resume.pdf', '_blank');
+    window.open('assets/resume/Aswathi Muralidharan - Resume.pdf', '_blank');
   }
 }
