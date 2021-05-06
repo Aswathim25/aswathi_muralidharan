@@ -10,9 +10,11 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ReferenceComponent } from './reference/reference.component';
 import { ContactComponent } from './contact/contact.component';
 import { NgxSpinnerModule } from '../../../node_modules/ngx-spinner';
-import { ProjectsComponent } from './projects/projects.component';
-import { ToastrModule } from 'ngx-toastr';
+import { ProjectsComponent, ProjectPopup } from './projects/projects.component';
 import { NgxHorizontalTimelineModule } from 'ngx-horizontal-timeline';
+import {MatDialogModule} from '@angular/material/dialog';  
+import {MatButtonModule} from '@angular/material/button';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -22,15 +24,10 @@ import { NgxHorizontalTimelineModule } from 'ngx-horizontal-timeline';
     SnotifyModule,
     NgxSpinnerModule,
     NgxHorizontalTimelineModule,
-    ToastrModule.forRoot(
-      {  
-        timeOut: 2000, 
-        enableHtml: true,
-        preventDuplicates: true,
-        positionClass:'top-right',  
-        closeButton: true,  
-      }
-    )
+    MatDialogModule,
+    MatButtonModule,
+    MatTooltipModule,
+    
   ],
   declarations: [
     ProfileComponent,
@@ -40,11 +37,10 @@ import { NgxHorizontalTimelineModule } from 'ngx-horizontal-timeline';
     ExperienceComponent,
     ReferenceComponent,
     ContactComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ProjectPopup
   ],
-  providers: [
-    { provide: 'SnotifyToastConfig', useValue: ToastDefaults },
-    SnotifyService,
-  ]
+  entryComponents: [ProjectPopup],
+  providers: []
 })
 export class ProfileModule { }

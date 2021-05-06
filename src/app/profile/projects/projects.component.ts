@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-projects',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
+  }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(ProjectPopup, {
+      width: '350px',
+    });
   }
 
   displayGif(){
@@ -35,4 +42,20 @@ export class ProjectsComponent implements OnInit {
   project2() {
     window.open('https://github.com/Aswathim25/marine_oil_spill','_blank')
   }
+}
+
+@Component({
+  selector: 'project-popup',
+  templateUrl: 'project_popup.component.html',
+})
+export class ProjectPopup {
+
+  constructor(
+    public dialogRef: MatDialogRef<ProjectPopup>){}
+    // @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+
 }

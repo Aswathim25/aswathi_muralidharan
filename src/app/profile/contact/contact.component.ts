@@ -1,9 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {NgForm} from '@angular/forms';
-import { ToastrService } from 'ngx-toastr';
-// import { EmailService } from '../../email.service';
-// import emailjs, { EmailJSResponseStatus } from 'emailjs';
-
 
 @Component({
   selector: 'app-contact',
@@ -15,7 +10,7 @@ export class ContactComponent implements OnInit {
   phone: boolean = false;
   model: any = {};
 
-  constructor(private toastr: ToastrService) {}
+  constructor() {}
      
 
   ngOnInit() {
