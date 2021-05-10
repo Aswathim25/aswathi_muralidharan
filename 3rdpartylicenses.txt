@@ -89,6 +89,10 @@ THE SOFTWARE.
 
 @angular/material/dialog
 
+@angular/material/icon
+
+@angular/material/stepper
+
 @angular/material/tooltip
 
 @angular/platform-browser
