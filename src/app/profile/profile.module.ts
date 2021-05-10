@@ -6,7 +6,7 @@ import { ProfileComponent } from './profile.component';
 import { HeaderComponent } from './header/header.component';
 import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
-import { ExperienceComponent } from './experience/experience.component';
+import { TimelineComponent } from './timeline/timeline.component';
 import { ReferenceComponent } from './reference/reference.component';
 import { ContactComponent } from './contact/contact.component';
 import { NgxSpinnerModule } from '../../../node_modules/ngx-spinner';
@@ -15,6 +15,8 @@ import { NgxHorizontalTimelineModule } from 'ngx-horizontal-timeline';
 import {MatDialogModule} from '@angular/material/dialog';  
 import {MatButtonModule} from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {ReactiveFormsModule} from '@angular/forms';
+import {MatStepperModule, MatInputModule, MatAutocompleteModule, MatIconModule, MatCardModule, MatSliderModule} from '@angular/material';
 
 
 @NgModule({
@@ -27,6 +29,13 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatDialogModule,
     MatButtonModule,
     MatTooltipModule,
+    ReactiveFormsModule, 
+    MatStepperModule,
+    MatInputModule,
+    MatAutocompleteModule,
+    MatIconModule,
+    MatCardModule,
+    MatSliderModule, 
     
   ],
   declarations: [
@@ -34,7 +43,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     HeaderComponent,
     IntroComponent,
     AboutComponent,
-    ExperienceComponent,
+    TimelineComponent,
     ReferenceComponent,
     ContactComponent,
     ProjectsComponent,

@@ -1,0 +1,34 @@
+.mat-stepper-horizontal {
+    background-color: rgb(209, 184, 152);
+}
+
+// burlywood;
+::ng-deep  .mat-step-header .mat-step-icon {
+      background-color: rgba(151, 29, 29, 0.54);
+      color: #fff;
+  }
+
+::ng-deep .mat-step-header .mat-step-icon-selected {
+    background-color: gray;
+    color: #fff;
+  }
+
+::ng-deep .mat-step-label {
+    color: black;
+}
+
+.mat-button, .mat-raised-button{
+    background-color:rgba(151, 29, 29, 0.54);
+  } 
+
+// .example-form {
+//     min-width: 150px;
+//     max-width: 500px;
+//     width: 100%;
+//     // background-color: gainsboro;
+//   }
+  
+  .example-full-width {
+    width: 100%;
+    
+  }
