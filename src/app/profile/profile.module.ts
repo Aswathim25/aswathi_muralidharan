@@ -17,7 +17,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MatStepperModule, MatInputModule, MatAutocompleteModule, MatIconModule, MatCardModule, MatSliderModule} from '@angular/material';
-
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
@@ -36,6 +36,7 @@ import {MatStepperModule, MatInputModule, MatAutocompleteModule, MatIconModule, 
     MatIconModule,
     MatCardModule,
     MatSliderModule, 
+    RouterModule,
     
   ],
   declarations: [
